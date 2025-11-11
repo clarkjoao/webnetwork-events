@@ -1,7 +1,7 @@
 FROM node:16.16 AS builder
 
 WORKDIR /app
-RUN apt-get update 
+# RUN apt-get update 
 COPY package*.json ./
 
 # Tell Puppeteer to skip installing Chrome
